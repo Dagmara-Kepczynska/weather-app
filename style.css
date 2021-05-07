@@ -14,7 +14,7 @@ body {
   background-size: cover;
 }
 .container {
-  background-image: url("weather-app/Sunny2.jpg");
+  background-image: url("https://github.com/Dagmara-Kepczynska/weather-app/blob/7b4a3aa2307dbd8d9395b2687391fafb85f9bc72/Sunny2.jpg");
   padding-bottom: 5px;
   min-height: 100%;
 }
