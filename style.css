@@ -14,7 +14,7 @@ body {
   background-size: cover;
 }
 .container {
-  background-image: url("Sunny2.jpg");
+  background-image: url("weather-app/Sunny2.jpg");
   padding-bottom: 5px;
   min-height: 100%;
 }
