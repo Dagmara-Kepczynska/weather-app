@@ -1,4 +1,153 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  color: aliceblue;
+}
+
+.container,
+.row-1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  background-image: url("images/Sunny2.jpg");
+  padding-bottom: 5px;
+  min-height: 100%;
+}
+.row-1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-image: inherit;
+}
+
+.row-3,
+.row-4 {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 100px;
+}
+
+.row-2 {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 100px;
+}
 h1 {
   text-align: center;
-  color: green;
+}
+h1#logo {
+  text-align: left;
+  max-block-size: inherit;
+}
+#current-city,
+#description {
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 991.98px) {
+  h1 {
+    text-align: left;
+  }
+}
+h2 {
+  font-weight: 900;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#search-bar {
+  margin: 5px;
+  position: inherit;
+  float: right;
+  padding: 5px 5px;
+  border: none;
+}
+#search-bar:focus {
+  border: none;
+}
+input[type="search"] {
+  background-color: white;
+  border: 1px;
+  width: 150px;
+  text-align: right;
+  margin-right: 0;
+}
+#search-button {
+  background-color: white;
+  border: 1px;
+  margin-left: 0;
+}
+
+#enter-city {
+  width: 80%;
+}
+#current-location {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 35px;
+}
+
+.weather,
+.visual {
+  text-align: center;
+}
+
+.visual {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 0;
+}
+#description {
+  margin-top: 0;
+}
+
+.weather {
+  font-size: 50px;
+}
+.date-time {
+  line-height: 1;
+  vertical-align: bottom;
+}
+.date,
+.time {
+  text-align: center;
+}
+.date {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.time {
+  font-size: 70px;
+  margin-top: 0;
+}
+p.currentTemp {
+  text-align: center;
+}
+#current-degrees {
+  font-size: 100px;
+  text-align: center;
+}
+#current-unit {
+  font-size: 20px;
+}
+#current-tempC {
+  font-size: 30px;
+}
+.details {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hourly,
+.daily {
+  text-align: center;
 }

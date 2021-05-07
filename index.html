@@ -1,19 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9d62a35b64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
-    <h1>Hello Git</h1>
-    <form>
-        <input type="email" placeholder="enter your email" />
-        <input type="password" placeholder="enter your password" />
-        <input type="submit" value="login" />
-    </form>
-    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="row row-1 justify-content-md-center">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 id="logo">
+                            WEATHER
+                        </h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1><span id="current-city">Sowerby Bridge</span> <button id="current-location"><i
+                                    class="fas fa-map-marker-alt"></i></button></h1>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+
+                <form id="search-bar">
+                    <input type="search" placeholder="Search" id="search-city" />
+                    <input type="submit" id="search-button">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row row-2">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col my-auto">
+                    <div class="date-time">
+                        <p class="date">
+                            Sun, 11 April 2021
+                        </p>
+                        <p class="time">
+                            16:45
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col my-auto">
+                    <p class="currentTemp">
+                        <span id="current-degrees">15</span><span id="current-unit"><a href="#"
+                                id="current-tempC">°C</a> | <a href="#" id="current-tempF">°F</a></span>
+
+                    </p>
+                </div>
+                <div class="col mt-3">
+                    <div class="weather">
+                        <p class="visual"><i class="far fa-sun"></i>
+                        </p>
+                        <p id="description">
+                            Sunny</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row row-cols-2 details">
+                    <div class="col">
+                        <p>Pressure: <span id="current-pressure">1003</span> hPa
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Feels like: <span id="current-feels-like">5</span>°C
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <p>
+                            Humidity: <span id="current-rain">12</span>%
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Wind: <span id="wind-speed">11</span> km/h <span id="wind-direction">NW</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-3">
+            <div class="col">
+                <div class="row row-cols-6 hourly">
+                    <div class="col">17:00</div>
+                    <div class="col">18:00</div>
+                    <div class="col">19:00</div>
+                    <div class="col">20:00</div>
+                    <div class="col">21:00</div>
+                    <div class="col">22:00</div>
+                    <div class="col">23:00</div>
+                    <div class="col">0:00</div>
+                    <div class="col">01:00</div>
+                    <div class="col">02:00</div>
+                    <div class="col">03:00</div>
+                    <div class="col">04:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-4">
+            <div class="col">
+                <div class="row row-cols-1 row-cols-lg-5 daily">
+                    <div class="col">Mon, 12/04</div>
+                    <div class="col">Tue 13/04</div>
+                    <div class="col">Wed 14/04</div>
+                    <div class="col">Thu 15/04</div>
+                    <div class="col">Fri 16/04</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+
+
+
 </body>
+
 </html>
