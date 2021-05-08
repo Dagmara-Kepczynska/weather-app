@@ -151,3 +151,6 @@ p.currentTemp {
 .daily {
   text-align: center;
 }
+#footer {
+  color: black;
+}
