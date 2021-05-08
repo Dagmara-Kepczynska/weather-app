@@ -155,4 +155,8 @@ p.currentTemp {
 a.footer {
   color: black;
   font-weight: 600;
+  text-align: center;
+}
+a.footer {
+  text-decoration: underline;
 }
