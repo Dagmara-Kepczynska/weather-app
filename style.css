@@ -151,6 +151,8 @@ p.currentTemp {
 .daily {
   text-align: center;
 }
-#footer {
+#footer,
+#footer.a {
   color: black;
+  font-weight: 600;
 }
